@@ -3,35 +3,54 @@ body {
     background-color: #F4F2EC;
 }
 
-.header {
-    text-align: left;
-    padding: 30px 0px 10px 10px;
+.hero {
+    min-height: 350px;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.logo {
-    display: inline-block;
-    text-align: left;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 550px;
+    color: #f8f1e7;
 }
 
 .logo p {
     font-family: 'Meddon', cursive;
+    font-size: 13px;
     margin: 0;
     line-height: 1;
-    font-size: 14px;
 }
 
 .logo h1 {
-    font-family: 'Libre Caslon Display', serif;
-    font-weight: 400;
-    font-size: 40px;
-    margin: 0;
     line-height: 1;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 0 15px;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+.hero-text {
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    line-height: 2;
+    font-size: 12px;
+    margin: 0 80px 0 0;
+
 }
 
 .nav {
@@ -40,7 +59,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px 38px;
-
     padding: 22px 15px;
     border-bottom: 0.5px solid #a45656;
 }
@@ -79,7 +97,7 @@ body {
     font-weight: 200;
 }
 
-.highlights {
+.cards {
     margin-top: 45px
 }
 
@@ -99,7 +117,7 @@ body {
     height: auto;
     aspect-ratio: 350 / 190;
     object-fit: cover;
-    
+
 }
 
 .card h3 {
@@ -116,6 +134,6 @@ body {
     font-family: 'Baskerville', serif;
     font-weight: 200;
     margin-top: 5px;
-     padding: 0 25px;
     font-size: 14px;
+
 }
