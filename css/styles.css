@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #F4F2EC;
 }
 
 .header {
@@ -53,7 +54,25 @@ body {
     transition: color 0.2s ease;
 }
 
-
 .nav a:hover {
     color: #a45656;
+}
+
+.intro {
+    text-align: center;
+    padding: 5px 40px 
+}
+
+.intro h2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: 'Baskervville SC', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #D61818;
+}
+
+.intro p {
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
 }
