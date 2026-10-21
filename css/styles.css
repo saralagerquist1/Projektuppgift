@@ -34,3 +34,21 @@ body {
     
     display: block;
 }
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 38px;
+
+    padding: 22px 15px;
+    border-bottom: 0.5px solid #a45656;
+}
+
+.nav a {
+    color: #49372d;
+    font-family: 'Baskervville SC', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
