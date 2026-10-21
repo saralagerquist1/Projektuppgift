@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
 }
@@ -31,7 +30,7 @@ body {
 .hero img {
     width: 100%;
     height: auto;
-    
+
     display: block;
 }
 
@@ -51,4 +50,10 @@ body {
     font-family: 'Baskervville SC', serif;
     font-size: 15px;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+
+.nav a:hover {
+    color: #a45656;
 }
