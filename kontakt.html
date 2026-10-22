@@ -28,10 +28,12 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header class="contact-header">
         <div class="contact-header-logo">
-        <p>i lilla</p>
-        <h1>Mormors cafè</h1>
+            <p>i lilla</p>
+            <h1>Mormors cafè</h1>
         </div>
         <button class="menu-toggle">☰</button>
         <nav class="menu">
@@ -42,6 +44,27 @@
             </ul>
         </nav>
     </header>
+    <!-- HEADER -->
+
+    <!-- KONTAKT-FORMULÄR -->
+    <section class="contact-form">
+        <h2>Behöver du kontakta oss?</h2>
+        <p>Har du frågor? Vi vill gärna höra från dig!</p>
+
+        <form>
+            <label for="name">Namn: </label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+    
     <!-- FOOTER -->
     <footer>
         <div class="footer-logo">

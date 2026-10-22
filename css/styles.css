@@ -291,15 +291,18 @@ footer {
 .menu {
     display: none;
     width: 100%;
+    
 }
 
 .menu.open {
     display: block;
+
 }
 
 .menu.toggle {
     cursor: pointer;
-  
+   
+
 }
 
 .menu ul {
@@ -314,4 +317,59 @@ footer {
     font-family: 'Baskerville', serif;
     font-weight: 200;
     font-size: 12px;
+}
+
+/* KONTAKTFORMULÄR */
+
+.contact-form {
+    padding: 20px 20px 40px;
+}
+
+.contact-form h2 {
+    font-family: 'Baskervville SC', serif;
+    font-weight: 200;
+    font-size: 26px;
+    color: #D61818;
+    margin-bottom: 0;
+}
+
+.contact-form p {
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: 1px;
+    padding-bottom: 10px;
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.contact-form input {
+    width: 300px;
+}
+
+.contact-form textarea {
+    width: 350px;
+}
+
+.contact-form button {
+    font-family: 'Baskerville', serif;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 60px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    
 }
