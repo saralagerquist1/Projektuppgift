@@ -226,7 +226,7 @@ footer {
     justify-content: center;
     padding: 35px 0 40px;
     gap: 70px;
-    
+
 }
 
 .footer-info h4 {
@@ -234,7 +234,7 @@ footer {
     font-size: 10px;
     font-weight: 500;
     margin-bottom: 0px;
-  
+
 
 }
 
@@ -242,12 +242,18 @@ footer {
     font-family: 'Montserrat', serif;
     font-size: 10px;
     margin-top: 4px;
-    
+
 }
 
 
 
 
+
+/* KONTAKTSIDA */
+/* KONTAKTSIDA */
+
+
+/* LOGOTYP */
 .contact-header {
     display: flex;
     padding: 20px;
@@ -256,6 +262,32 @@ footer {
     flex-wrap: wrap;
 }
 
+.contact-header-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header-logo h1 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 1;
+    color: #d61818;
+}
+
+.contact-header-logo p {
+    font-size: 12px;
+    font-family: "Meddon", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #d61818;
+}
+
+/* MENYKNAPP */
 .menu {
     display: none;
     width: 100%;
@@ -267,6 +299,7 @@ footer {
 
 .menu.toggle {
     cursor: pointer;
+  
 }
 
 .menu ul {
@@ -278,4 +311,7 @@ footer {
 .menu a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    font-size: 12px;
 }
