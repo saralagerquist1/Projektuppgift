@@ -51,7 +51,7 @@
         <h2>Behöver du kontakta oss?</h2>
         <p>Har du frågor? Vi vill gärna höra från dig!</p>
 
-        <form>
+        <form novalidate> 
             <label for="name">Namn: </label>
             <input type="text" id="name" name="name">
 
@@ -61,10 +61,12 @@
             <label for="message">Meddelande</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
+            <ul id="error-list" aria-live="polite"></ul>
+
             <button type="submit">Skicka</button>
         </form>
     </section>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-logo">
