@@ -27,7 +27,7 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
+<body class="contact-page">
 
     <!-- HEADER -->
     <header class="contact-header">
@@ -38,9 +38,9 @@
         <button class="menu-toggle">☰</button>
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="#meny">Vår meny</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="index.html">HEM</a></li>
+                <li><a href="#meny">VÅR MENY</a></li>
+                <li><a href="#kontakt">KONTAKT</a></li>
             </ul>
         </nav>
     </header>
@@ -51,17 +51,17 @@
         <h2>Behöver du kontakta oss?</h2>
         <p>Har du frågor? Vi vill gärna höra från dig!</p>
 
-        <form novalidate> 
+        <form> 
             <label for="name">Namn: </label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name">
 
             <label for="email">E-post</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email">
 
             <label for="message">Meddelande</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5"></textarea>
 
-            <ul id="error-list" aria-live="polite"></ul>
+            <ul id="errorlist"></ul>
 
             <button type="submit">Skicka</button>
         </form>

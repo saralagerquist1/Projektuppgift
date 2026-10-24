@@ -1,15 +1,13 @@
 'use strict';
 
-
-
-// KONTAKTA OSS
-
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
 const form = document.querySelector(".contact-form form");
 
+const errorList = document.querySelector('#errorlist');
 
+let errorArr = [];
 
 // MENYKNAPP
 menuBtn.addEventListener("click", function () {
@@ -18,40 +16,63 @@ menuBtn.addEventListener("click", function () {
     } else {
         menu.classList.add("open");
     }
+
 });
 
-// FORMULÄR
+// FÖRMULÄR OCH VALIDERING
+form.addEventListener("submit", onSubmit);
 
-// Eventlyssnare
-form.addEventListener("submit", function (event) {
+function onSubmit(event) {
     event.preventDefault();
-
-    const errors = [];
 
     const name = document.querySelector("#name").value.trim();
     const email = document.querySelector('#email').value.trim();
     const message = document.querySelector('#message').value.trim();
-    const errorList = document.querySelector('#error-list');
-
-    if (name === "") {
-        errors.push("Vänligen skriv ditt namn");
+    const errors = validateForm(name, email, message);
+    if (!validateForm(name, email, message)) {
+        displayErrors();
+    } else {
+        errorList.innerHTML = "";
+        form.reset();
     }
+};
 
-    if (email === '') {
-        errors.push('Vänligen skriv din e-postadress.');
-    }
+function validateForm(name, email, message) {
 
-    if (message === '') {
-        errors.push('Vänligen skriv ett meddelande.');
-    }
 
+    let validate = true;
+    errorArr = [];
     errorList.innerHTML = '';
 
-    errors.forEach(function(error) {
-        const li =document.createElement("li");
-        li.textContent = error;
-        errorList.appendChild(li);
+    if (name.length === 0) {
+        errorArr.push("Vänligen skriv ditt namn");
+        validate = false;
     }
-)
-});
+
+    if (email.length === 0) {
+        errorArr.push('Vänligen skriv din e-postadress');
+        validate = false;
+    }
+
+    if (message.length === 0) {
+        errorArr.push('Vänligen skriv ett meddelande');
+        validate = false;
+    }
+
+    return validate;
+
+}
+
+
+function displayErrors() {
+
+    if (errorArr.length > 0) {
+        for (let i = 0; i < errorArr.length; i++) {
+            const liEl = document.createElement("li");
+            liEl.innerHTML = (errorArr[i]);
+            errorList.appendChild(liEl);
+        }
+    }
+
+}
 

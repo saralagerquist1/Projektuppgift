@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-    padding: 40px 10%;
+    padding: 30px 5%;
     box-sizing: border-box;
     position: relative;
 }
@@ -42,7 +42,7 @@ body {
 .logo h1 {
     line-height: 1;
     font-family: 'Libre Caslon Display', serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     margin: 0 0 15px;
 }
@@ -51,8 +51,8 @@ body {
     font-family: 'Baskerville', serif;
     font-weight: 200;
     line-height: 2;
-    font-size: 9px;
-    margin: 0 50px 0 0;
+    font-size: 11px;
+    margin: 0 50px 20px 0;
 
 }
 
@@ -260,6 +260,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: white;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    
 }
 
 .contact-header-logo {
@@ -287,36 +291,80 @@ footer {
     color: #d61818;
 }
 
-/* MENYKNAPP */
-.menu {
+/* MENYKNAPP HEM */
+.home-page .menu {
     display: none;
     width: 100%;
-    
+
+    padding: 20px;
 }
 
-.menu.open {
+.home-page .menu.open {
     display: block;
 
 }
 
-.menu.toggle {
+.home-page .menu-toggle {
     cursor: pointer;
-   
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    padding-left: 0;
 
 }
 
-.menu ul {
+.home-page .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu a {
+.home-page .menu a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'Baskerville', serif;
     font-weight: 200;
-    font-size: 12px;
+
+    font-size: 13px;
+}
+
+/* MENYKNAPP KONTAKT */
+.contact-page .menu {
+    display: none;
+    width: 100%;
+
+}
+
+.contact-page .menu.open {
+    display: block;
+
+}
+
+.contact-page .menu-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    color: #811d1d;
+    border: 0;
+    font-size: 22px;
+    padding-right: 20px;
+
+
+}
+
+.contact-page .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+.contact-page .menu a {
+    color: #811d1d;
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+
+    font-size: 13px;
 }
 
 /* KONTAKTFORMULÄR */
@@ -342,7 +390,7 @@ footer {
 }
 
 form {
-    
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -371,11 +419,11 @@ form {
     width: 60px;
     margin: 5px 0;
     box-sizing: border-box;
-    
+
 }
 
 
-#error-list {
+#errorlist {
     color: #a83232;
     font-size: 14px;
     padding-left: 20px;
