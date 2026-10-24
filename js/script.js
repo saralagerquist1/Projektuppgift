@@ -5,7 +5,8 @@ const menu = document.querySelector(".menu");
 
 const form = document.querySelector(".contact-form form");
 
-const errorList = document.querySelector('#errorlist');
+const errorList = document.querySelector("#errorlist");
+const validatedText = document.querySelector("#validated");
 
 let errorArr = [];
 
@@ -29,11 +30,15 @@ function onSubmit(event) {
     const email = document.querySelector('#email').value.trim();
     const message = document.querySelector('#message').value.trim();
     const errors = validateForm(name, email, message);
+
     if (!validateForm(name, email, message)) {
         displayErrors();
     } else {
         errorList.innerHTML = "";
+        saveHistory(name, email);
+        displayValidated(name)
         form.reset();
+
     }
 };
 
@@ -74,5 +79,33 @@ function displayErrors() {
         }
     }
 
+}
+
+// SPARAR HISTORIK TILL LOCALSTORAGE
+function saveHistory(name, email, message) {
+    const user = {
+        name: name,
+        email: email
+    }
+
+    const localStorageData = localStorage.getItem("users");
+
+    let users = JSON.parse(localStorageData);
+
+    if (users === null) {
+        users = [];
+    }
+
+    users.push(user);
+    const usersJson = JSON.stringify(users);
+    localStorage.setItem("users", usersJson);
+
+    
+}
+
+
+function displayValidated(name) {
+    const validatedText = document.querySelector("#validated");
+    validatedText.textContent = `Tack för ditt meddelande, ${name}! Vi återkommer till dig så snart vi kan.`;
 }
 

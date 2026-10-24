@@ -431,3 +431,9 @@ form {
     margin-bottom: 10px;
     font-family: 'Baskerville', serif;
 }
+
+#validated {
+    font-size: 14px;
+    margin: 20px 0 10px;
+    font-family: 'Baskerville', serif;
+}
