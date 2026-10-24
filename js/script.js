@@ -36,7 +36,7 @@ function onSubmit(event) {
     } else {
         errorList.innerHTML = "";
         saveHistory(name, email);
-        displayValidated(name)
+       
         form.reset();
 
     }
@@ -99,13 +99,4 @@ function saveHistory(name, email, message) {
     users.push(user);
     const usersJson = JSON.stringify(users);
     localStorage.setItem("users", usersJson);
-
-    
 }
-
-
-function displayValidated(name) {
-    const validatedText = document.querySelector("#validated");
-    validatedText.textContent = `Tack för ditt meddelande, ${name}! Vi återkommer till dig så snart vi kan.`;
-}
-
