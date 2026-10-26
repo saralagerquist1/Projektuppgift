@@ -177,7 +177,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 0 35px;
 }
 
@@ -250,7 +250,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 35px 0 40px;
-    gap: 70px;
+    gap: 20vw;
+    
 
 }
 
@@ -527,19 +528,14 @@ form {
 
     /* BAKGRUND-SEKTION */
 
-    .grandmother {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        max-width: 800px;
-        margin: 25px auto 35px;
-    }
 
+ .grandmother {
+    padding-top: 50px;
+
+}
 
     .grandmother img {
-        display: block;
         width: calc(50% - 20px);
-        object-fit: cover;
     }
 
     .our-story h2 {
@@ -547,12 +543,22 @@ form {
         padding-top: 25px;
 
     }
-
     .our-story p {
         padding-top: 10px;
         font-size: 20px;
         margin: 0 100px 0;
     }
+
+    /* FOOTER */
+
+
+.footer-info h4 {
+    text-align: center;
+}
+
+.footer-info p {
+      text-align: center;
+}
 
 
 }
