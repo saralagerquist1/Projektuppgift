@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+.hero#meny {
+    background-image: url("../images/kavel.jpg");
+}
+
 .hero::before {
     content: "";
     position: absolute;
@@ -251,7 +255,7 @@ footer {
     justify-content: center;
     padding: 35px 0 40px;
     gap: 20vw;
-    
+
 
 }
 
@@ -480,7 +484,7 @@ form {
 
     /* INTRO-SEKTION */
     .intro {
-        margin: 0 100px 20px;
+        margin: 30px 100px 60px;
     }
 
     .intro h2 {
@@ -488,7 +492,7 @@ form {
     }
 
     .intro p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
 
@@ -529,10 +533,10 @@ form {
     /* BAKGRUND-SEKTION */
 
 
- .grandmother {
-    padding-top: 50px;
+    .grandmother {
+        padding-top: 50px;
 
-}
+    }
 
     .grandmother img {
         width: calc(50% - 20px);
@@ -543,6 +547,7 @@ form {
         padding-top: 25px;
 
     }
+
     .our-story p {
         padding-top: 10px;
         font-size: 20px;
@@ -552,13 +557,13 @@ form {
     /* FOOTER */
 
 
-.footer-info h4 {
-    text-align: center;
-}
+    .footer-info h4 {
+        text-align: center;
+    }
 
-.footer-info p {
-      text-align: center;
-}
+    .footer-info p {
+        text-align: center;
+    }
 
 
 }
