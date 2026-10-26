@@ -597,6 +597,22 @@ footer {
     margin-right: 130px;
 }
 
+/* GRID FÖR MENYKATEGORIER */
+/* Samlar alla tre menykategorier */
+.menu-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Utseendet på varje menykategori */
+.menu-category {
+    min-width: 0;
+    margin-bottom: 0;
+    background-color: #f5f3ee;
+    padding: 5px 20px;
+}
+
 /* Varje kategori */
 .menu-category {
     margin-bottom: 25px;
@@ -894,6 +910,15 @@ footer {
     .contact-form button {
         align-self: center;
     }
+
+    .menu-categories {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.menu-category:last-child {
+    grid-column: 1 / -1;
+}
 
 
 }
