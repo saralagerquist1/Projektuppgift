@@ -101,6 +101,42 @@ body {
     font-size: 13px;
 }
 
+
+/* MENYKNAPP MENY */
+.menu-page .menu {
+    display: none;
+    width: 100%;
+    padding: 20px;
+}
+
+.menu-page .menu.open {
+    display: block;
+}
+
+.menu-page .menu-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    color: #EEEADF;
+    border: 0;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.menu-page .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-page .menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
 /* INTRO-SEKTION */
 .intro {
     text-align: center;
@@ -413,6 +449,73 @@ form {
     box-sizing: border-box;
 
 }
+
+
+
+
+/* MENYSIDA */
+/* MENYSIDA */
+
+.lunch {
+    padding: 60px 5%;
+    background-color: #F4F2EC;
+    text-align: center;
+}
+
+.lunch h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.lunch>p {
+    margin-bottom: 35px;
+}
+
+/* PILAR */
+
+.lunch-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.lunch-content {
+    flex: 1;
+    max-width: 500px;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.lunch-content h3 {
+    font-family: 'Baskervville SC', serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.lunch-content p {
+    line-height: 1.6;
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+}
+
+
+.arrow-button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
 
 
 #errorlist {
