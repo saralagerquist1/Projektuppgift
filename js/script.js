@@ -1,4 +1,5 @@
 'use strict';
+console.log("java fungerar!");
 
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
@@ -11,17 +12,21 @@ const validatedText = document.querySelector("#validated");
 let errorArr = [];
 
 // MENYKNAPP
-menuBtn.addEventListener("click", function () {
-    if (menu.classList.contains("open")) {
-        menu.classList.remove("open")
-    } else {
-        menu.classList.add("open");
-    }
+if (menuBtn && menu) {
+    menuBtn.addEventListener("click", function () {
+        if (menu.classList.contains("open")) {
+            menu.classList.remove("open")
+        } else {
+            menu.classList.add("open");
+        }
 
-});
+    });
+}
 
 // FÖRMULÄR OCH VALIDERING
-form.addEventListener("submit", onSubmit);
+if (form) {
+    form.addEventListener("submit", onSubmit);
+}
 
 function onSubmit(event) {
     event.preventDefault();
@@ -36,11 +41,12 @@ function onSubmit(event) {
     } else {
         errorList.innerHTML = "";
         saveHistory(name, email);
-       
+
         form.reset();
 
     }
 };
+
 
 function validateForm(name, email, message) {
 
@@ -100,3 +106,52 @@ function saveHistory(name, email, message) {
     const usersJson = JSON.stringify(users);
     localStorage.setItem("users", usersJson);
 }
+
+
+const lunches = [
+    {
+        day: "Dagens lunch",
+        dish: "Köttbullar med gräddsås och potatis"
+    },
+    {
+        day: "Morgondagens lunch",
+        dish: "Krämig kycklinggryta med ris"
+    },
+    {
+        day: "Lunch i övermorgon",
+        dish: "Hemlagad lasagne"
+    }
+];
+
+let currentDay = 0;
+
+const dayTitle = document.getElementById("lunch-day");
+const dishText = document.getElementById("lunch-dish");
+const prevButton = document.getElementById("prev-day");
+const nextButton = document.getElementById("next-day");
+
+function showLunch() {
+    dayTitle.textContent = lunches[currentDay].day;
+    dishText.textContent = lunches[currentDay].dish;
+
+    prevButton.hidden = currentDay === 0;
+
+    nextButton.hidden = currentDay === lunches.length - 1;
+}
+
+nextButton.addEventListener("click", function () {
+    if (currentDay < lunches.length - 1) {
+        currentDay++;
+        showLunch();
+    }
+});
+
+
+prevButton.addEventListener("click", function () {
+    if (currentDay > 0) {
+        currentDay--;
+        showLunch();
+    }
+});
+
+showLunch();
