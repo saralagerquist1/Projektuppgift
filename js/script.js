@@ -110,16 +110,23 @@ function saveHistory(name, email, message) {
 
 const lunches = [
     {
-        day: "Dagens lunch",
-        dish: "Köttbullar med gräddsås och potatis"
+        day: "DAGENS LUNCH",
+        dish: "Krämig broccolisoppa",
+        info: "Medföljer sallad och bröd",
+        price: "129 kr"
+
     },
     {
-        day: "Morgondagens lunch",
-        dish: "Krämig kycklinggryta med ris"
+        day: "MORGONDAGENS LUNCH",
+        dish: "Pannbiff med potatis och stekt lök",
+        info: "Medföljer sallad och bröd",
+        price: "129 kr"
     },
     {
-        day: "Lunch i övermorgon",
-        dish: "Hemlagad lasagne"
+        day: "LUNCH I ÖVERMORGON",
+        dish: "Hemlagad lasagne",
+        info: "Medföljer sallad och bröd",
+        price: "129 kr"
     }
 ];
 
@@ -127,12 +134,16 @@ let currentDay = 0;
 
 const dayTitle = document.getElementById("lunch-day");
 const dishText = document.getElementById("lunch-dish");
+const dishInfo = document.getElementById("lunch-info");
+const dishPrice = document.getElementById("lunch-price");
 const prevButton = document.getElementById("prev-day");
 const nextButton = document.getElementById("next-day");
 
 function showLunch() {
     dayTitle.textContent = lunches[currentDay].day;
     dishText.textContent = lunches[currentDay].dish;
+    dishInfo.textContent = lunches[currentDay].info;
+    dishPrice.textContent = lunches[currentDay].price;
 
     prevButton.hidden = currentDay === 0;
 

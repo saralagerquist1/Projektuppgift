@@ -136,6 +136,36 @@ body {
     font-size: 13px;
 }
 
+/* NAVIGATION PÅ MENYSIDAN */
+.menu-page .menu-toggle {
+    display: none;
+}
+
+.menu-page .menu {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    width: auto;
+    padding: 0;
+    z-index: 2;
+}
+
+.menu-page .menu ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 20px 0 0 0;
+    list-style: none;
+}
+
+.menu-page .menu a {
+    color: #EEEADF;
+    text-decoration: none;
+    font-family: 'Baskerville', serif;
+    font-weight: 200;
+    font-size: 20px;
+}
 
 /* INTRO-SEKTION */
 .intro {
@@ -322,9 +352,10 @@ footer {
 /* HEADER & LOGOTYP */
 .contact-header {
     display: flex;
-    padding: 20px 20px 0 0;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 20px;
     background-color: white;
 
 }
@@ -334,11 +365,13 @@ footer {
     flex-direction: column;
 }
 
+
+
 .contact-header-logo h1 {
     font-family: 'Libre Caslon Display', serif;
     font-size: 40px;
     font-weight: 300;
-    margin-top: 0;
+    margin: 0;
     line-height: 1;
     color: #d61818;
 }
@@ -373,6 +406,7 @@ footer {
     border: 0;
     font-size: 22px;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .contact-page .menu ul {
@@ -382,16 +416,18 @@ footer {
 }
 
 .contact-page .menu a {
-    color: #811d1d;
+    color: #aa6666;
     text-decoration: none;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
+    font-family: 'Old Standard TT', serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 13px;
 }
 
 /* KONTAKTFORMULÄR */
 .contact-form {
-    padding: 10px 20px 20px;
+    padding: 30px 20px 40px;
+    background-color: #f4f1eb;
 
 }
 
@@ -400,54 +436,60 @@ footer {
     font-weight: 200;
     font-size: 26px;
     color: #D61818;
-    margin-bottom: 0;
+    margin: 0 0 8px;
+    line-height: 1.2
 }
 
 .contact-form p {
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
+    font-family: 'Old Standard TT', serif;
+    font-style: normal;
     font-size: 14px;
-    margin-top: 2px;
+    margin: 0 0 24px;
+    line-height: 1.5px;
 }
 
-form {
+.contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px 0 0;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 10px;
 }
 
 .contact-form label {
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
+    font-family: 'Old Standard TT', serif;
+    font-style: normal;
     font-size: 14px;
+    margin-top: 12px;
 }
 
-.contact-form input {
-    width: 300px;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
     border: none;
-    border-bottom: solid 1px;
+    border-bottom: 1px solid black;
+    border-radius: 0;
     background-color: transparent;
-
+    padding: 10px 0;
 }
 
 .contact-form textarea {
-    width: 300px;
-    border: none;
-    border-bottom: solid 1px;
-    background-color: transparent;
+    min-height: 100px;
+    resize: vertical;
 }
 
 .contact-form button {
-    font-family: 'Baskerville', serif;
+    font-family: 'Old Standard TT', serif;
     display: block;
     background-color: white;
     border: 1px solid black;
     border-radius: 3px;
-    width: 60px;
+    width: auto;
     margin: 5px 0;
     box-sizing: border-box;
-
+    cursor: pointer;
 }
 
 
@@ -490,15 +532,26 @@ form {
 }
 
 .lunch-content h3 {
-    font-family: 'Baskervville SC', serif;
-    font-weight: 600;
-    font-size: 24px;
+    font-family: 'Baskerville', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #bb1616;
     margin-top: 0;
 }
 
+#lunch-info {
+    font-size: 13px;
+}
+
+#lunch-price {
+    font-size: 13px;
+    font-style: italic;
+}
+
 .lunch-content p {
-    line-height: 1.6;
-    font-family: 'Baskerville', serif;
+    margin-top: 0;
+    font-family: "Old Standard TT", serif;
+    color: #8c8383;
     font-weight: 200;
 }
 
@@ -507,13 +560,96 @@ form {
     width: 45px;
     height: 45px;
     border: none;
+    color: #fefcfc;
     background-color: transparent;
     font-size: 25px;
     cursor: pointer;
 }
 
 
+/* MENYSEKTION */
+.food-menu {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b9b7a4;
 
+}
+
+/* Huvudrubrik */
+.food-menu>h2 {
+    font-family: 'Baskervville SC', serif;
+    text-align: center;
+    color: #bb1616;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Introduktionstext */
+.menu-intro {
+    font-family: "Old Standard TT", serif;
+    font-style: italic;
+    text-align: center;
+    color: #8c8383;
+    margin-bottom: 70px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+/* Varje kategori */
+.menu-category {
+    margin-bottom: 25px;
+    background-color: #f5f3ee;
+    padding: 5px 20px;
+}
+
+/* Rubrik för kategorin */
+.menu-category h3 {
+    font-family: "Baskervville SC", serif;
+    font-style: normal;
+    color: #5b4949;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #b9b7a4;
+}
+
+/* En maträtt eller dryck */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+/* Namn och beskrivning */
+.menu-item-info h4 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    color: #5b4949;
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+
+.menu-item-info p {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    color: #797568;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Priset till höger */
+.menu-price {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    color: #5b4949;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
 
 
@@ -524,7 +660,7 @@ form {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Baskerville', serif;
+    font-family: 'Old Standard TT', serif;
 }
 
 /* BREAKPOINT */
@@ -666,6 +802,97 @@ form {
 
     .footer-info p {
         text-align: center;
+    }
+
+    /* KONTAKTSIDA – STÖRRE SKÄRMAR */
+
+
+    .contact-header {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 30px;
+        gap: 20px;
+    }
+
+    .contact-header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-header-logo h1 {
+        text-align: left;
+        font-size: 80px;
+    }
+
+    .contact-header-logo p {
+        font-size: 20px;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    /* Navigering */
+    .contact-page .menu-toggle {
+        display: none;
+    }
+
+    .contact-page .menu {
+        display: block;
+        width: auto;
+    }
+
+    .contact-page .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-page .menu ul a {
+        font-size: 15px;
+    }
+
+    .contact-page .menu a {
+        font-size: 18px;
+    }
+
+    /* Kontaktformulär */
+    .contact-form {
+        padding: 100px 30px 60px;
+        text-align: center;
+    }
+
+    .contact-form h2,
+    .contact-form p {
+        text-align: center;
+    }
+
+
+    .contact-form form {
+        max-width: 500px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        text-align: center;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .contact-form button {
+        align-self: center;
     }
 
 
