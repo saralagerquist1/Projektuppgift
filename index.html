@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 
+
     <!-- Meddon Font -->
     <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
 
     <!-- Baskervville SC -->
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap" rel="stylesheet">
 
     <!-- Baskerville -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
@@ -31,13 +34,7 @@
 <body class="home-page">
     <section class="hero" id="hem">
 
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HEM</a></li>
-                <li><a href="meny.html">VÅR MENY</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-        </nav>
+
 
         <div class="hero-content">
             <div class="logo">
@@ -46,33 +43,49 @@
             </div>
 
             <p class="hero-text">
-                ...där varma dofter sipprar ut genom den varma
-                ugnen och där rårörda lingon kokar försiktigt på
-                kokplattan. Det är något i luften, något som gömmer
-                sig i hörnen, en känsla av frid och värme.
+                ...där varma dofter sipprar ut genom ugnen, där sylten kokar försiktigt på kokplattan. Det är något i
+                luften, något som gömmer sig i hörnen, en känsla av frid och värme - något som endast kan hittas hemmas
+                hos mormor.
             </p>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </section>
 
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="meny.html">Vår meny</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
     <!-- INTRO-SEKTION -->
     <section class="intro">
-        <h2>Välkommen hem till mormor</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Ornare condimentum dignissim malesuada aliquam posuere semper leo
-            amet. Euismod euismod pretium massa amet a posuere. Suspendisse id lacus viverra lacus sed feugiat
-            fringilla. Lectus bibendum congue netus diam suspendisse suspendisse magna ullamcorper quis. In id facilisis
-            sit nec ultricies consectetur amet in.</p>
+        <h2><span>VÄLKOMMEN</span><br>HEM TILL MORMOR</h2>
+        <p>Öppna dörren till en svunnen tid, där kaffepannan alltid står varm och doften av nygräddat sprider sig genom
+            köket. Här lever gamla traditioner vidare, bland porslin med historia och bakverk efterlängtade i
+            generationer.
+            <br>
+            <br>
+            Stig in, slå dig till ro och låt tiden sakta ner en stund.
+        </p>
     </section>
     <!-- INTRO-SEKTION -->
 
     <!-- CARDS-SEKTION -->
     <article class="highlights">
         <div class="card">
-            <img src="images/pannkakor.jpg" alt="Pannkakor med sylt">
+            <img src="images/pannkakor_card.jpg" alt="Pannkakor med sylt">
             <div class="card-content">
-                <h3>lunch</h3>
-                <p>Dagens lunch hittar du hos oss varje dag, från måndag till lördag, Allt från soppluncher, sallader,
-                    mackor; och på fredagar bjuder vi alltid på pannkakstårta för det små (och äldre såklart!).
+                <h3>LUNCH</h3>
+                <p><em>Dagens lunch hittar du hos oss varje dag, från måndag till lördag, Allt från soppluncher,
+                        sallader,
+                        mackor; och på fredagar bjuder vi alltid på pannkakstårta för det små (och äldre såklart!).</em>
+                    <br>
                     <br>
                     Varje dag mellan 11.00-13.00
                 </p>
@@ -81,10 +94,11 @@
         <div class="card">
             <img src="images/fikabuffe.jpg" alt="Pannkakor med sylt">
             <div class="card-content">
-                <h3>fika buffe</h3>
-                <p>Frossa i vår omtalade fika-buffé; kakor, bakelser, tårtor, bullar, kaffe, thé, jordgubbssaft, jaa,
-                    allt
-                    du kan tänka dig och lite därtill!
+                <h3>FIKA BUFFE</h3>
+                <p><em>Frossa i vår omtalade fika-buffé; kakor, bakelser, tårtor, bullar, kaffe, thé, jordgubbssaft,
+                        jaa,
+                        allt
+                        du kan tänka dig och lite därtill!</em>
                     <br>
                     <br>
                     Fredag: 13.00-16.00 <br>
@@ -95,12 +109,12 @@
         <div class="card">
             <img src="images/hembakat.jpg" alt="Pannkakor med sylt">
             <div class="card-content">
-                <h3>hembakat</h3>
+                <h3>HEMBAKAT</h3>
                 <p>Med hembakat från hjärtat bjuder vi på en smak av barndomens somrar,
                     varma kök och gamla, kära traditioner.
                     <br>
                     <br>
-                    Hos oss lever de små stunderna kvar.
+                    <em>Hos oss lever de små stunderna kvar.</em>
                 </p>
             </div>
         </div>
@@ -109,15 +123,23 @@
 
     <!-- OUR-STORY-SEKTION -->
     <section class="our-story">
+        <h2><span>PRECIS</span><br> SOM VI MINNS DET</h2>
         <div class="grandmother">
+
             <img src="images/mormor1.jpg" alt="Pannkakor med sylt">
             <img src="images/mormor2.jpg" alt="Pannkakor med sylt">
         </div>
-        <h2>precis som vi minns det</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Ornare condimentum dignissim malesuada aliquam posuere semper leo
-            amet. Euismod euismod pretium massa amet a posuere. Suspendisse id lacus viverra lacus sed feugiat
-            fringilla. Lectus bibendum congue netus diam suspendisse suspendisse magna ullamcorper quis. In id facilisis
-            sit nec ultricies consectetur amet in.
+
+        <p>Min mormor levde i en tid då brödet bakades för hand, kaffet serverades ur det finaste porslinet och dörren
+            alltid stod öppen för den som behövde en stunds sällskap. Hennes kök var hemmets hjärta. Morgonljuset silade
+            in genom spetsgardinerna, mjölet vilade över bakbordet och doften av smör, kardemumma och nybakat fyllde
+            rummen. Där samlades familj och grannar kring kaffekopparna, och de enklaste stunderna blev till de käraste
+            minnena.
+            <br>
+            <br>
+            Med Mormors Café vill jag låta hennes värld leva vidare – <em>i varje kaka, varje dukat bord och varje gäst
+                som
+                kliver in genom dörren.</em> För även om åren går, finns vissa människor kvar i allt det de lärde oss.
         </p>
     </section>
     <!-- OUR-STORY-SEKTION -->
@@ -142,15 +164,26 @@
                     Söndag: Stängt
                 </p>
             </div>
-            <div class="company-info">
-                <h4>Kontakta oss: </h4>
+            <div class="company-adress">
+                <h4>Hitta till oss: </h4>
                 <p>Staketgatan 33,
                     <br>
-                    80323 GÄVLE
-                    <br>
-                    Tel: 070-2244495
+                    803 23
+                    GÄVLE
+
                 </p>
             </div>
+            <div class="company-contact">
+                <h4>Telefon:</h4>
+                <p>026-62 98 67</p>
+
+                <h4>Epost:</h4>
+                <p>info.mormorscafe.se</p>
+
+                <h4>Frågor?</h4>
+                <p>Du kan kontakta oss <a href="kontakt.html" target="_blank">här</a>!</p>
+            </div>
+            <div class="copyright">2026 Mormors Café · Integritetspolicy</div>
         </div>
     </footer>
     <!-- FOOTER -->

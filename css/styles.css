@@ -17,8 +17,8 @@ body {
     position: relative;
 }
 
-.hero#meny {
-    background-image: url("../images/kavel.jpg");
+.hero#menu {
+    background-image: url("../images/pannkakor_header.jpg");
 }
 
 .hero::before {
@@ -32,7 +32,7 @@ body {
 .hero-content {
     position: relative;
     max-width: 550px;
-    color: #EEEADF;
+    color: #F5F2EA;
 
 }
 
@@ -46,32 +46,49 @@ body {
     font-style: normal;
     margin: 0;
     line-height: 1;
+
 }
 
 .logo h1 {
-    line-height: 1;
+
     font-family: 'Libre Caslon Display', serif;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+
     margin: 0 0 15px;
 }
 
 .hero-text {
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
-    line-height: 2;
-    font-size: 11px;
-    margin: 0 50px 20px 0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 12px;
+    font-style: normal;
 
+    margin: 0 110px 20px 0;
 }
 
+.menu-toggle {
+    width: 20px;
+    border: none;
+    background: none;
+    padding: 0;
+}
 
+.menu-toggle span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #EEEADF;
+    margin: 3px 0;
+}
 
-/* MENYKNAPP HEM */
+/* HEMSIDA HAMBURGARMENY */
 .home-page .menu {
     display: none;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 10px;
+    background-color: #EEEADF;
 }
 
 .home-page .menu.open {
@@ -83,135 +100,83 @@ body {
     background-color: transparent;
     color: #EEEADF;
     border: 0;
-    font-size: 20px;
+
     padding-left: 0;
 }
 
 .home-page .menu ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+
+    list-style: none;
+}
+
+.home-page .menu li {
+    margin-bottom: 12px;
 }
 
 .home-page .menu a {
-    color: rgb(0, 0, 0);
+    font-family: 'Baskervville SC', serif;
+    font-size: 16px;
     text-decoration: none;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
-    font-size: 13px;
+    color: #3B3232;
 }
 
-
-/* MENYKNAPP MENY */
-.menu-page .menu {
-    display: none;
-    width: 100%;
-    padding: 20px;
-}
-
-.menu-page .menu.open {
-    display: block;
-}
-
-.menu-page .menu-toggle {
-    cursor: pointer;
-    background-color: transparent;
-    color: #EEEADF;
-    border: 0;
-    font-size: 20px;
-    padding-left: 0;
-}
-
-.menu-page .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-page .menu a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
-    font-size: 13px;
-}
-
-/* NAVIGATION PÅ MENYSIDAN */
-.menu-page .menu-toggle {
-    display: none;
-}
-
-.menu-page .menu {
-    display: block;
-    position: absolute;
-    top: 25px;
-    left: 5%;
-    width: auto;
-    padding: 0;
-    z-index: 2;
-}
-
-.menu-page .menu ul {
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 20px 0 0 0;
-    list-style: none;
-}
-
-.menu-page .menu a {
-    color: #EEEADF;
-    text-decoration: none;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
-    font-size: 20px;
-}
 
 /* INTRO-SEKTION */
 .intro {
     text-align: center;
-    padding: 5px 40px;
+    padding: 0 0 25px;
     margin-bottom: 20px;
+    background-color: #FAF9F6;
 }
 
 .intro h2 {
+    font-family: 'Baskervville SC', serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #B61313;
+
     padding-top: 25px;
     padding-bottom: 0px;
-    font-family: 'Baskervville SC', serif;
-    font-size: 26px;
-    font-weight: 400;
-    color: #D61818;
     margin-bottom: 7px;
 }
 
-.intro p {
+.intro h2 span {
+    font-size: 16px;
+    font-weight: 500;
+}
 
-    font-size: 14px;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
+.intro p {
+    font-size: 16px;
+    font-family: 'Old Standard TT', serif;
+    color: #3B3232;
+    padding: 5%;
 }
 
 /* TJÄNSTER-SEKTION */
 .hightlights {
-    margin-top: 45px
+    margin-top: 45px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+
+    width: 90%;
     margin: 45px auto;
-    background-color: #ffffff;
+
+    background-color: #FAF9F6;
 }
 
 .card img {
     display: block;
-    width: 100%;
-    height: 270px;
     object-fit: cover;
 
-
+    width: 100%;
+    height: 350px;
 }
 
 .card-content {
@@ -219,28 +184,34 @@ body {
 }
 
 .card h3 {
-    text-align: center;
     font-family: 'Baskervville SC', serif;
-    font-weight: 200;
-    font-size: 20px;
-    color: #D61818;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B61313;
+
+    text-align: center;
+
     margin-bottom: 0px;
 }
 
 .card p {
-    text-align: center;
-    font-family: 'Baskerville', serif;
-    font-weight: 200;
-    margin-top: 5px;
-    font-size: 14px;
-    padding-top: 15px;
 
+    font-family: 'Old Standard TT', serif;
+    font-size: 15px;
+    font-weight: 200;
+
+    text-align: center;
+    color: #3B3232;
+    margin-top: 5px;
+    padding-top: 15px;
 }
 
 /* BAKGRUND-SEKTION */
 .our-story {
-    padding: 20px 60px 8%;
-    text-align: center;
+    padding: 20px 20px 8%;
+    text-align: left;
+    background-color: #FAF9F6;
+
 }
 
 .grandmother {
@@ -248,7 +219,7 @@ body {
     justify-content: center;
     gap: 25px;
     max-width: 1200px;
-    margin: 0 0 35px;
+    margin: 0 10px 35px;
 }
 
 .grandmother img {
@@ -257,90 +228,26 @@ body {
 }
 
 .our-story h2 {
-
-
     font-family: 'Baskervville SC', serif;
-    font-size: 25px;
-    font-weight: 400;
-    color: #D61818;
-    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #B61313;
+    margin-bottom: 10px;
+}
+
+.our-story h2 span {
+    font-weight: 500;
 }
 
 .our-story p {
-    font-family: 'Baskerville', serif;
+    font-family: 'Old Standard TT', serif;
     font-size: 14px;
+    text-align: left;
+    color: #3B3232;
+    ;
 
 
 }
-
-/* FOOTER */
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 15px 20px;
-}
-
-.footer-logo-main {
-    position: relative;
-}
-
-.footer-logo p {
-    font-family: 'Meddon', cursive;
-    font-size: 10px;
-    margin: 0;
-    color: #d61818;
-    position: absolute;
-    top: -13px;
-    left: 0;
-}
-
-.footer-logo h1 {
-    font-family: 'Libre Caslon Display', serif;
-    font-size: 30px;
-    font-weight: 300;
-    color: #d61818;
-    line-height: 1;
-    margin: 0;
-}
-
-.footer-logo span {
-    font-family: 'Baskerville', serif;
-    font-size: 11px;
-    margin-top: 5px;
-
-}
-
-footer {
-    background-color: #ffffff;
-}
-
-.footer-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 35px 0 40px;
-    gap: 20vw;
-
-
-}
-
-.footer-info h4 {
-    font-family: 'Montserrat', serif;
-    font-size: 10px;
-    font-weight: 500;
-    margin-bottom: 0px;
-
-
-}
-
-.footer-info p {
-    font-family: 'Montserrat', serif;
-    font-size: 10px;
-    margin-top: 4px;
-
-}
-
 
 
 
@@ -349,15 +256,20 @@ footer {
 /* KONTAKTSIDA */
 
 
-/* HEADER & LOGOTYP */
+
+
+
+
+/* header & logotyp */
 .contact-header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 24px;
-    padding: 20px;
-    background-color: white;
 
+    background-color: #FAF9F6;
+
+    padding: 20px;
+    gap: 24px;
 }
 
 .contact-header-logo {
@@ -365,15 +277,13 @@ footer {
     flex-direction: column;
 }
 
-
-
 .contact-header-logo h1 {
     font-family: 'Libre Caslon Display', serif;
     font-size: 40px;
     font-weight: 300;
     margin: 0;
     line-height: 1;
-    color: #d61818;
+    color: #B61313;
 }
 
 .contact-header-logo p {
@@ -384,12 +294,29 @@ footer {
     margin: 0;
     line-height: 1;
     margin-bottom: 0;
-    color: #d61818;
+    color: #B61313;
 }
 
 
 
 /* MENYKNAPP KONTAKT */
+
+.contact-page .menu-toggle {
+    width: 20px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.contact-page .menu-toggle span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #B61313;
+    ;
+    margin: 3px 0;
+}
+
 .contact-page .menu {
     display: none;
     width: 100%;
@@ -402,11 +329,10 @@ footer {
 .contact-page .menu-toggle {
     cursor: pointer;
     background-color: transparent;
-    color: #d61818;
+    color: #B61313;
     border: 0;
     font-size: 22px;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 0 20px;
 }
 
 .contact-page .menu ul {
@@ -416,7 +342,7 @@ footer {
 }
 
 .contact-page .menu a {
-    color: #aa6666;
+    color: #3B3232;
     text-decoration: none;
     font-family: 'Old Standard TT', serif;
     font-style: normal;
@@ -433,18 +359,19 @@ footer {
 
 .contact-form h2 {
     font-family: 'Baskervville SC', serif;
-    font-weight: 200;
-    font-size: 26px;
-    color: #D61818;
+    font-weight: 600;
+    font-size: 17px;
+    color: #B61313;
     margin: 0 0 8px;
     line-height: 1.2
 }
 
 .contact-form p {
     font-family: 'Old Standard TT', serif;
-    font-style: normal;
-    font-size: 14px;
-    margin: 0 0 24px;
+
+    color: #3B3232;
+    font-size: 13px;
+    margin: 5px 0 24px;
     line-height: 1.5px;
 }
 
@@ -458,8 +385,9 @@ footer {
 
 .contact-form label {
     font-family: 'Old Standard TT', serif;
+    color: #3B3232;
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 12px;
 }
 
@@ -469,7 +397,8 @@ footer {
     max-width: 500px;
     box-sizing: border-box;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #3B3232;
+    ;
     border-radius: 0;
     background-color: transparent;
     padding: 10px 0;
@@ -484,7 +413,7 @@ footer {
     font-family: 'Old Standard TT', serif;
     display: block;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #3B3232;
     border-radius: 3px;
     width: auto;
     margin: 5px 0;
@@ -493,10 +422,48 @@ footer {
 }
 
 
-
-
 /* MENYSIDA */
 /* MENYSIDA */
+
+/* hamburgarmeny */
+.menu-page .menu-toggle {
+    display: block;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: #EEEADF;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.menu-page .menu {
+    display: none;
+    position: static;
+    width: 100%;
+    padding: 15px 5%;
+    box-sizing: border-box;
+}
+
+.menu-page .menu.open {
+    display: block;
+}
+
+.menu-page .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    margin: 0;
+    padding: 10px 2px 0;
+}
+
+.menu-page .menu a {
+    color: #8c8383;
+    text-decoration: none;
+    font-family: 'Old Standard TT', serif;
+    font-size: 14px;
+}
+
 
 .lunch {
     padding: 60px 5%;
@@ -526,31 +493,36 @@ footer {
 .lunch-content {
     flex: 1;
     max-width: 500px;
-    padding: 30px 20px;
+    padding: 40px 20px;
     background-color: #FFFFFF;
     border-radius: 8px;
 }
 
 .lunch-content h3 {
-    font-family: 'Baskerville', serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 600;
+    font-size: 23px;
     color: #bb1616;
     margin-top: 0;
 }
 
 #lunch-info {
-    font-size: 13px;
+    font-size: 15px;
+    margin-top: 0;
+
 }
 
 #lunch-price {
-    font-size: 13px;
+    font-size: 15px;
     font-style: italic;
+    padding-top: 15px;
 }
 
 .lunch-content p {
+    margin-bottom: 0;
     margin-top: 0;
     font-family: "Old Standard TT", serif;
+    font-size: 18px;
     color: #8c8383;
     font-weight: 200;
 }
@@ -560,7 +532,7 @@ footer {
     width: 45px;
     height: 45px;
     border: none;
-    color: #fefcfc;
+    color: #cc7a7a;
     background-color: transparent;
     font-size: 25px;
     cursor: pointer;
@@ -574,38 +546,41 @@ footer {
     padding: 60px 30px;
     background-color: #ffffff;
     border-bottom: 1px solid #b9b7a4;
-
 }
 
 /* Huvudrubrik */
 .food-menu>h2 {
     font-family: 'Baskervville SC', serif;
+    font-weight: 800;
     text-align: center;
     color: #bb1616;
-    font-size: 2.5rem;
+    font-size: 16px;
     margin-bottom: 10px;
+}
+
+.food-menu span {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 /* Introduktionstext */
 .menu-intro {
     font-family: "Old Standard TT", serif;
+    font-size: 10px;
     font-style: italic;
     text-align: center;
     color: #8c8383;
     margin-bottom: 70px;
-    margin-left: 130px;
-    margin-right: 130px;
+
 }
 
 /* GRID FÖR MENYKATEGORIER */
-/* Samlar alla tre menykategorier */
 .menu-categories {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-/* Utseendet på varje menykategori */
 .menu-category {
     min-width: 0;
     margin-bottom: 0;
@@ -613,7 +588,6 @@ footer {
     padding: 5px 20px;
 }
 
-/* Varje kategori */
 .menu-category {
     margin-bottom: 25px;
     background-color: #f5f3ee;
@@ -622,11 +596,12 @@ footer {
 
 /* Rubrik för kategorin */
 .menu-category h3 {
-    font-family: "Baskervville SC", serif;
+    font-family: "Old Standard TT", serif;
+    font-size: 20px;
+    font-weight: 600;
     font-style: normal;
     color: #5b4949;
-    font-weight: 600;
-    font-size: 1.7rem;
+
     margin-bottom: 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid #b9b7a4;
@@ -668,6 +643,103 @@ footer {
 }
 
 
+/* FOOTER */
+/* FOOTER */
+
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px 0 50px;
+}
+
+.footer-logo-main {
+    position: relative;
+}
+
+.footer-logo p {
+    font-family: 'Meddon', cursive;
+    font-size: 11px;
+    color: #d61818;
+
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+
+    margin: 0;
+}
+
+.footer-logo h1 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 37px;
+    font-weight: 300;
+    color: #d61818;
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-logo span {
+    font-family: 'Old Standard TT', serif;
+    font-size: 12px;
+
+
+}
+
+footer {
+    background-color: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 20px 20px 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+
+}
+
+.footer-info h4 {
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0px;
+
+
+}
+
+.footer-info p {
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+
+    margin-top: 4px;
+
+}
+
+.footer-info .copyright {
+    font-family: 'Old Standard TT', serif;
+    font-size: 9px;
+    font-weight: normal;
+
+    margin-top: 10px;
+}
+
+.footer-info .company-contact {
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+.footer-info .company-contact a {
+    color: black;
+}
+
+
+
 
 
 #errorlist {
@@ -699,7 +771,7 @@ footer {
     }
 
     .logo p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .hero-text {
@@ -711,7 +783,9 @@ footer {
         display: none;
     }
 
+
     .home-page .menu {
+        background-color: transparent;
         display: block;
         position: absolute;
         top: 25px;
@@ -722,6 +796,7 @@ footer {
     }
 
     .home-page .menu ul {
+
         display: flex;
         gap: 50px;
         margin: 0;
@@ -730,6 +805,7 @@ footer {
     }
 
     .home-page .menu a {
+        background-color: transparent;
         color: #EEEADF;
         text-decoration: none;
         font-family: 'Baskerville', serif;
@@ -738,16 +814,19 @@ footer {
     }
 
     /* INTRO-SEKTION */
-    .intro {
-        margin: 30px 100px 60px;
-    }
+
 
     .intro h2 {
-        font-size: 38px;
+        font-size: 36px;
+    }
+
+    .intro h2 span {
+        font-size: 33px;
     }
 
     .intro p {
-        font-size: 17px;
+        font-size: 16px;
+        padding: 0 15% 0;
     }
 
 
@@ -804,9 +883,9 @@ footer {
     }
 
     .our-story p {
-        padding-top: 10px;
+        padding: 10px 20px;
         font-size: 20px;
-        margin: 0 100px 0;
+
     }
 
     /* FOOTER */
@@ -869,6 +948,7 @@ footer {
 
     .contact-page .menu ul a {
         font-size: 15px;
+        color: #3B3232;
     }
 
     .contact-page .menu a {
@@ -912,13 +992,121 @@ footer {
     }
 
     .menu-categories {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
 
-.menu-category:last-child {
-    grid-column: 1 / -1;
-}
+    .menu-category:last-child {
+        grid-column: 1 / 3;
+    }
 
 
+    /* NAVIGERING MENY */
+
+    .menu-page .menu-toggle {
+        display: none;
+    }
+
+    .menu-page .menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 5%;
+        width: auto;
+        padding: 0;
+        background: transparent;
+    }
+
+    .menu-page .menu ul {
+        background-color: transparent;
+        flex-direction: row;
+        gap: 50px;
+        padding-top: 20px;
+    }
+
+    .menu-page .menu a {
+        color: #EEEADF;
+        font-size: 20px;
+    }
+
+
+
+
+    /* FOOTER */
+    .footer-logo {
+        align-items: left;
+        padding: 50px 20px;
+
+    }
+
+    .footer-logo h1 {
+        font-size: 50px;
+    }
+
+    .footer-logo p {
+        font-size: 20px;
+        top: -35px;
+
+    }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 20px;
+        padding: 30px 20px;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .footer-info .company-adress {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        text-align: left;
+    }
+
+    .footer-info .company-hours {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: start;
+        align-items: left;
+    }
+
+    .footer-info .company-contact {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .footer-info .company-contact p,
+    .footer-info .company-contact h4 {
+        text-align: left;
+    }
+
+    .company-contact a {
+        white-space: nowrap;
+    }
+
+    .footer-info h4 {
+        font-size: 13px;
+        text-align: left;
+
+        margin-bottom: 0;
+    }
+
+    .footer-info p {
+        margin-bottom: 0;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .footer-info .copyright {
+        margin-top: 40px;
+        font-size: 12px;
+    }
 }

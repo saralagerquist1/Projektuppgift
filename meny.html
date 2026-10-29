@@ -14,7 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
 
     <!-- Baskervville SC -->
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap" rel="stylesheet">
 
     <!-- Baskerville -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
@@ -35,15 +37,6 @@
 
 <body class="menu-page">
     <section class="hero" id="menu">
-
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HEM</a></li>
-                <li><a href="meny.html">VÅR MENY</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-        </nav>
-
         <div class="hero-content">
             <div class="logo">
                 <p>lilla</p>
@@ -51,18 +44,24 @@
             </div>
 
             <p class="hero-text">
-                ...där varma dofter sipprar ut genom den varma
-                ugnen och där rårörda lingon kokar försiktigt på
-                kokplattan. Det är något i luften, något som gömmer
-                sig i hörnen, en känsla av frid och värme.
+                …där bullarna fortfarande är lite ljumna och kakorna ligger uppradade i glasburkar. Här hittar du sådant
+                mormor brukade baka, från kanelbullar och småkakor till söta bakverk som passar fint till kaffet.
             </p>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </section>
 
-
-
-
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="meny.html">Vår meny</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
 
     <main class="menu-page">
         <section class="lunch">
@@ -89,7 +88,10 @@
 
 
     <section class="food-menu" id="food-menu">
-        <h2>mormors meny</h2>
+        <h2><span>HÄR HAR DU</span>
+            <br>
+            MORMORS MENY
+        </h2>
         <p class="menu-intro">Välkommen hem till Mormors Café, där doften av nybakat sprider sig och varje måltid lagas
             med omtanke. Här hittar du allt från goda smörgåsar och vällagad lunch till hembakat fika och nybryggt
             kaffe.
@@ -99,7 +101,7 @@
         </p>
         <div class="menu-categories">
             <div class="menu-category">
-                <h3>maträtter</h3>
+                <h3>MATRÄTTER</h3>
 
                 <div class="menu-item">
                     <div class="menu-item-info">
@@ -135,7 +137,7 @@
             </div>
 
             <div class="menu-category">
-                <h3>sallader</h3>
+                <h3>SALLADER</h3>
 
                 <div class="menu-item">
                     <div class="menu-item-info">
@@ -169,7 +171,7 @@
             </div>
 
             <div class="menu-category">
-                <h3>glassmeny</h3>
+                <h3>GLASSMENY</h3>
 
                 <div class="menu-item">
                     <div class="menu-item-info">
@@ -241,15 +243,26 @@
                     Söndag: Stängt
                 </p>
             </div>
-            <div class="company-info">
-                <h4>Kontakta oss: </h4>
+            <div class="company-adress">
+                <h4>Hitta till oss: </h4>
                 <p>Staketgatan 33,
                     <br>
-                    80323 GÄVLE
-                    <br>
-                    Tel: 070-2244495
+                    803 23
+                    GÄVLE
+
                 </p>
             </div>
+            <div class="company-contact">
+                <h4>Telefon:</h4>
+                <p>026-62 98 67</p>
+
+                <h4>Epost:</h4>
+                <p>info.mormorscafe.se</p>
+
+                <h4>Frågor?</h4>
+                <p>Du kan kontakta oss <a href="kontakt.html" target="_blank">här</a>!</p>
+            </div>
+            <div class="copyright">2026 Mormors Café · Integritetspolicy</div>
         </div>
     </footer>
     <!-- FOOTER -->

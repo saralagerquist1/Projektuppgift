@@ -15,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
 
     <!-- Baskervville SC -->
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap" rel="stylesheet">
     <!-- Baskerville -->
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
 
@@ -31,17 +32,21 @@
 
     <!-- HEADER -->
     <header class="contact-header">
-        <button class="menu-toggle">☰</button>
+        <button class="menu-toggle" aria-label="Öppna meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="contact-header-logo">
             <p>i lilla</p>
-            <h1>Mormors cafè</h1>
+            <h1>Mormors Cafè</h1>
         </div>
-        
+
         <nav class="menu">
             <ul>
-                <li><a href="index.html">HEM</a></li>
-                <li><a href="meny.html">VÅR MENY</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="meny.html">Vår meny</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -49,10 +54,10 @@
 
     <!-- KONTAKT-FORMULÄR -->
     <section class="contact-form">
-        <h2>Behöver du kontakta oss?</h2>
+        <h2>BEHÖVER DU KONTAKTA OSS?</h2>
         <p>Har du frågor? Vi vill gärna höra från dig!</p>
 
-        <form> 
+        <form>
             <label for="name">Namn: </label>
             <input type="text" id="name">
 
