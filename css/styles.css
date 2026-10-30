@@ -154,6 +154,10 @@ body {
     padding: 0 5%;
 }
 
+
+
+
+
 /* Tjänster */
 .hightlights {
     margin-top: 45px;
@@ -292,13 +296,6 @@ body {
 }
 
 /* MENYKNAPP KONTAKT */
-.contact-page .menu-toggle {
-    width: 20px;
-    border: none;
-    background: none;
-    padding: 0;
-}
-
 .contact-page .menu {
     display: none;
     width: 100%;
@@ -309,28 +306,25 @@ body {
 }
 
 .contact-page .menu-toggle {
-    cursor: pointer;
-    background-color: transparent;
-    color: #B61313;
-    border: 0;
     font-size: 22px;
+    cursor: pointer;
+
+    width: 20px;
+    border: 0;
     padding-top: 0 20px;
+
 }
 
-.contact-page .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 20px 20px;
+.contact-page span {
+    display: block;
+
+    background-color: #B61313;
+
+    height: 1px;
+    width: 100%;
+    margin: 3px 0;
 }
 
-.contact-page .menu a {
-    color: #3B3232;
-    text-decoration: none;
-    font-family: 'Old Standard TT', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-}
 
 /* KONTAKTFORMULÄR */
 .contact-form {
@@ -700,6 +694,7 @@ footer {
     margin-bottom: 10px;
     font-family: 'Old Standard TT', serif;
 }
+
 
 /* STÖRRE SKÄRM */
 @media screen and (min-width: 768px) {
