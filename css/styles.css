@@ -214,6 +214,7 @@ body {
 
 }
 
+/* Bildkontainer */
 .grandmother {
     display: flex;
     justify-content: center;
@@ -227,11 +228,14 @@ body {
     object-fit: cover;
 }
 
+/* Tillhörande text */
 .our-story h2 {
     font-family: 'Baskervville SC', serif;
     font-size: 20px;
     font-weight: 700;
+
     color: #B61313;
+
     margin-bottom: 10px;
 }
 
@@ -402,9 +406,6 @@ body {
 
 /* MENYSIDA */
 /* MENYSIDA */
-/* hamburgarmeny */
-
-
 
 .lunch {
     padding: 60px 5%;
@@ -421,7 +422,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* PILAR */
+/* pilar */
 
 .lunch-navigation {
     display: flex;
@@ -480,39 +481,40 @@ body {
 }
 
 
-/* Henysektion */
+/* Menysektion */
 .food-menu {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 60px 30px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #b9b7a4;
+    background-color: #FAF9F6;
+
+    padding: 0 20px 15px;
 }
 
 /* Huvudrubrik */
 .food-menu>h2 {
     font-family: 'Baskervville SC', serif;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
-    color: #bb1616;
-    font-size: 16px;
-    margin-bottom: 10px;
+
+    color: #B61313;
+
+    padding: 30px 0 0 0;
+    margin: 0;
 }
 
 .food-menu span {
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
 }
 
 /* Introduktionstext */
 .menu-intro {
-    font-family: "Old Standard TT", serif;
-    font-size: 10px;
-    font-style: italic;
+    font-family: 'Old Standard TT', serif;
+    font-size: 14px;
     text-align: center;
-    color: #8c8383;
-    margin-bottom: 70px;
 
+    color: #3B3232;
+
+    padding: 0 5%;
 }
 
 /* Grid för menykategorier */
@@ -538,9 +540,10 @@ body {
 /* Rubrik för kategorin */
 .menu-category h3 {
     font-family: "Old Standard TT", serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     font-style: normal;
+
     color: #5b4949;
 
     margin-bottom: 20px;
@@ -553,7 +556,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     gap: 20px;
+
     margin-bottom: 22px;
 }
 
@@ -561,37 +566,51 @@ body {
 .menu-item-info h4 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
+    font-size: 15px;
+
     color: #5b4949;
-    font-size: 1rem;
+
     margin: 0 0 5px;
 }
 
 .menu-item-info p {
     font-family: "Old Standard TT", serif;
     font-style: normal;
+    font-size: 13px;
+
     color: #797568;
-    font-size: 0.8rem;
+
     margin: 0;
 }
 
 /* Priset till höger */
 .menu-price {
     font-family: "Old Standard TT", serif;
+    font-size: 15px;
     font-style: normal;
-    color: #5b4949;
     font-weight: bold;
+
+    color: #5b4949;
+
     white-space: nowrap;
 }
 
 
 /* FOOTER */
 /* FOOTER */
+footer {
+    background-color: #ffffff;
 
+    margin-bottom: 0;
+    padding: 20px;
+}
 
+/* Logotyp */
 .footer-logo {
     display: flex;
     flex-direction: column;
     align-items: left;
+
     padding: 50px 0 30px;
 }
 
@@ -599,11 +618,11 @@ body {
     position: relative;
 }
 
+/* i lilla */
 .footer-logo p {
     font-family: 'Meddon', cursive;
     font-size: 11px;
     color: #d61818;
-
 
     position: absolute;
     top: -20px;
@@ -612,27 +631,22 @@ body {
     margin: 0;
 }
 
+/* Mormors Café */
 .footer-logo h1 {
     font-family: 'Old Standard TT', serif;
     font-size: 37px;
     font-weight: 300;
-    color: #d61818;
     line-height: 1;
+
+    color: #d61818;
+
     margin: 0;
 }
 
+/* Text under logotyp */
 .footer-logo span {
     font-family: 'Old Standard TT', serif;
     font-size: 12px;
-
-
-}
-
-footer {
-    background-color: #ffffff;
-
-    margin-bottom: 0;
-    padding: 20px;
 }
 
 .footer-info {
@@ -646,9 +660,8 @@ footer {
     font-family: 'Montserrat', serif;
     font-size: 12px;
     font-weight: 500;
+
     margin-bottom: 0px;
-
-
 }
 
 .footer-info p {
@@ -657,14 +670,6 @@ footer {
 
     margin-top: 4px;
 
-}
-
-.footer-info .copyright {
-    font-family: 'Old Standard TT', serif;
-    font-size: 9px;
-    font-weight: normal;
-
-    margin-top: 10px;
 }
 
 .footer-info .company-contact {
@@ -678,10 +683,15 @@ footer {
     color: black;
 }
 
+.footer-info .copyright {
+    font-family: 'Old Standard TT', serif;
+    font-size: 9px;
+    font-weight: normal;
 
+    margin-top: 10px;
+}
 
-
-
+/* VALIDERING JS */
 #errorlist {
     color: #a83232;
     font-size: 14px;
@@ -691,10 +701,10 @@ footer {
     font-family: 'Old Standard TT', serif;
 }
 
-/* BREAKPOINT */
+/* STÖRRE SKÄRM */
 @media screen and (min-width: 768px) {
 
-    /* STÖRRE HERO */
+    /* HERO */
     .hero {
         min-height: 900px;
         align-items: center;
@@ -719,159 +729,45 @@ footer {
     }
 
     /* NY NAVIGATION */
-    .home-page .menu-toggle {
+    .menu-toggle {
         display: none;
     }
 
-
-    .home-page .menu {
+    .menu {
         background-color: transparent;
+
         display: block;
         position: absolute;
         top: 25px;
         left: 5%;
+        z-index: 2;
+
         width: auto;
         padding: 0;
-        z-index: 2;
     }
 
-    .home-page .menu ul {
-
+    .menu ul {
         display: flex;
         gap: 50px;
+
         margin: 0;
         padding: 20px 0 0 0;
+
         list-style: none;
     }
 
-    .home-page .menu a {
-        background-color: transparent;
-        color: #EEEADF;
-        text-decoration: none;
+    .menu a {
         font-family: 'Baskerville', serif;
         font-weight: 200;
         font-size: 20px;
+
+        background-color: transparent;
+        color: #EEEADF;
+
+        text-decoration: none;
     }
 
-    /* INTRO-SEKTION */
-    .intro {
-        padding: 20px 0 30px;
-    }
-
-
-    .intro h2 {
-        font-size: 36px;
-    }
-
-    .intro h2 span {
-        font-size: 33px;
-    }
-
-    .intro p {
-        font-size: 16px;
-        padding: 0 15% 0;
-    }
-
-
-    /* KORT */
-    .card {
-        flex-direction: row;
-        align-items: stretch;
-        width: 90;
-    }
-
-    .card img {
-        width: 30%;
-        height: 270px;
-    }
-
-    .card-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1;
-        padding: 25px;
-    }
-
-    .card h3 {
-        font-weight: 600;
-        font-size: 25px;
-    }
-
-    .card p {
-        font-size: 16px;
-    }
-
-    .card h3,
-    .card p {
-        text-align: left;
-    }
-
-
-    /* BAKGRUND-SEKTION */
-
-
-
-    .grandmother img {
-        width: calc(49% - 10px);
-    }
-
-    .our-story h2 {
-        font-size: 36px;
-        padding: 25px 0 0 20px;
-    }
-
-    .our-story h2 span {
-        font-size: 33px;
-    }
-
-    .our-story p {
-        padding: 0 100px 0 20px;
-        font-size: 16px;
-
-    }
-
-    /* FOOTER */
-
-
-    .footer-info h4 {
-        text-align: center;
-    }
-
-    .footer-info p {
-        text-align: center;
-    }
-
-    /* KONTAKTSIDA – STÖRRE SKÄRMAR */
-
-
-    .contact-header {
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 20px 30px;
-        gap: 20px;
-    }
-
-    .contact-header-logo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .contact-header-logo h1 {
-        text-align: left;
-        font-size: 80px;
-    }
-
-    .contact-header-logo p {
-        font-size: 20px;
-        text-align: left;
-        align-self: flex-start;
-    }
-
-    /* Navigering */
+    /* NY NAVIGATION KONTAKTSIDA */
     .contact-page .menu-toggle {
         display: none;
     }
@@ -896,6 +792,118 @@ footer {
 
     .contact-page .menu a {
         font-size: 18px;
+    }
+
+    /* HEMSIDA */
+    /* INTRO-SEKTION */
+    .intro {
+        padding: 20px 0 30px;
+    }
+
+
+    .intro h2 {
+        font-size: 36px;
+    }
+
+    .intro h2 span {
+        font-size: 33px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        padding: 0 15% 0;
+    }
+
+
+    /* Hemsida kort */
+    .card {
+        flex-direction: row;
+        align-items: stretch;
+
+        width: 90;
+    }
+
+    .card img {
+        width: 30%;
+        height: 270px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        flex: 1;
+        padding: 25px;
+    }
+
+    .card h3 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card h3,
+    .card p {
+        text-align: left;
+    }
+
+
+    /* Hemsida Bakgrund */
+    .grandmother img {
+        width: calc(49% - 10px);
+    }
+
+    .our-story h2 {
+        font-size: 36px;
+        padding: 25px 0 0 20px;
+    }
+
+    .our-story h2 span {
+        font-size: 33px;
+    }
+
+    .our-story p {
+        padding: 0 100px 0 20px;
+        font-size: 16px;
+    }
+
+
+
+    /* KONTAKTSIDA */
+    .contact-header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        padding: 40px 20px 30px;
+        gap: 20px;
+    }
+
+    /* Logotyp */
+    .contact-header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .contact-header-logo h1 {
+        font-size: 80px;
+
+        text-align: left;
+    }
+
+    .contact-header-logo p {
+        font-size: 20px;
+
+        align-self: flex-start;
+
+        text-align: left;
     }
 
     /* Kontaktformulär */
@@ -943,38 +951,6 @@ footer {
         grid-column: 1 / 3;
     }
 
-
-    /* NAVIGERING MENY */
-
-    .menu-page .menu-toggle {
-        display: none;
-    }
-
-    .menu-page .menu {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 5%;
-        width: auto;
-        padding: 0;
-        background: transparent;
-    }
-
-    .menu-page .menu ul {
-        background-color: transparent;
-        flex-direction: row;
-        gap: 50px;
-        padding-top: 20px;
-    }
-
-    .menu-page .menu a {
-        color: #EEEADF;
-        font-size: 20px;
-    }
-
-
-
-
     /* FOOTER */
     .footer-logo {
         align-items: left;
@@ -996,16 +972,20 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        row-gap: 20px;
-        padding: 30px 20px;
+
         justify-content: start;
         text-align: left;
+
+        row-gap: 20px;
+        padding: 30px 20px;
     }
 
     .footer-info .company-adress {
         grid-column: 1;
         grid-row: 1;
+
         justify-self: start;
+
         text-align: left;
     }
 
@@ -1019,11 +999,12 @@ footer {
     .footer-info .company-contact {
         grid-column: 1;
         grid-row: 3;
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        text-align: left;
 
+        text-align: left;
     }
 
     .footer-info .company-contact p,

@@ -1,6 +1,6 @@
 'use strict';
-console.log("java fungerar!");
 
+// Hämta
 const menuBtn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
@@ -9,6 +9,8 @@ const form = document.querySelector(".contact-form form");
 const errorList = document.querySelector("#errorlist");
 const validatedText = document.querySelector("#validated");
 
+
+// Felmeddelande lista
 let errorArr = [];
 
 // MENYKNAPP
@@ -23,11 +25,12 @@ if (menuBtn && menu) {
     });
 }
 
-// FÖRMULÄR OCH VALIDERING
+// Formulär och validering
 if (form) {
     form.addEventListener("submit", onSubmit);
 }
 
+// Hanterar formulärets inskickning och kontrollerar att fälten är ifyllda
 function onSubmit(event) {
     event.preventDefault();
 
@@ -47,11 +50,12 @@ function onSubmit(event) {
     }
 };
 
-
+// Kontrollerar att namn, e-postadress och meddelande inte är tomma
 function validateForm(name, email, message) {
 
 
     let validate = true;
+
     errorArr = [];
     errorList.innerHTML = '';
 
@@ -71,10 +75,9 @@ function validateForm(name, email, message) {
     }
 
     return validate;
-
 }
 
-
+// Visar felmeddelanden om något formulärfält inte är ifyllt.
 function displayErrors() {
 
     if (errorArr.length > 0) {
@@ -88,7 +91,8 @@ function displayErrors() {
 }
 
 // SPARAR HISTORIK TILL LOCALSTORAGE
-function saveHistory(name, email, message) {
+// Sparar användarens namn och e-postadress i localStorage.
+function saveHistory(name, email) {
     const user = {
         name: name,
         email: email
@@ -107,7 +111,7 @@ function saveHistory(name, email, message) {
     localStorage.setItem("users", usersJson);
 }
 
-
+// LUNCHMENY
 const lunches = [
     {
         day: "DAGENS LUNCH",
@@ -139,6 +143,7 @@ const dishPrice = document.getElementById("lunch-price");
 const prevButton = document.getElementById("prev-day");
 const nextButton = document.getElementById("next-day");
 
+// Visar aktuell lunch och anpassar knapparna efter vald dag
 function showLunch() {
     dayTitle.textContent = lunches[currentDay].day;
     dishText.textContent = lunches[currentDay].dish;
@@ -150,6 +155,7 @@ function showLunch() {
     nextButton.hidden = currentDay === lunches.length - 1;
 }
 
+// Visar nästa dags lunch när användaren klickar på framåtknappen.
 nextButton.addEventListener("click", function () {
     if (currentDay < lunches.length - 1) {
         currentDay++;
@@ -157,7 +163,7 @@ nextButton.addEventListener("click", function () {
     }
 });
 
-
+// Visar föregående dags lunch när användaren klickar på bakåtknappen.
 prevButton.addEventListener("click", function () {
     if (currentDay > 0) {
         currentDay--;
