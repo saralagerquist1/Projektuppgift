@@ -13,7 +13,7 @@ const validatedText = document.querySelector("#validated");
 // Felmeddelande lista
 let errorArr = [];
 
-// MENYKNAPP
+// Menyknapp
 if (menuBtn && menu) {
     menuBtn.addEventListener("click", function () {
         if (menu.classList.contains("open")) {
@@ -90,7 +90,6 @@ function displayErrors() {
 
 }
 
-// SPARAR HISTORIK TILL LOCALSTORAGE
 // Sparar användarens namn och e-postadress i localStorage.
 function saveHistory(name, email) {
     const user = {
@@ -111,7 +110,7 @@ function saveHistory(name, email) {
     localStorage.setItem("users", usersJson);
 }
 
-// LUNCHMENY
+// Lunchmeny
 const lunches = [
     {
         day: "DAGENS LUNCH",
