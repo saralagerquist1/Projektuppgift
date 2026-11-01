@@ -445,7 +445,7 @@ body {
     border-radius: 8px;
 }
 
-.lunch-content h3 {
+.lunch-content h2 {
     font-family: 'Old Standard TT', serif;
     font-weight: 600;
     font-size: 23px;
@@ -647,6 +647,16 @@ footer {
 
     margin: 0;
 }
+.footer-logo h2 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #d61818;
+
+    margin: 0;
+}
 
 /* Text under logotyp */
 .footer-logo span {
@@ -661,7 +671,7 @@ footer {
     justify-content: left;
 }
 
-.footer-info h4 {
+.footer-info h2 {
     font-family: 'Montserrat', serif;
     font-size: 12px;
     font-weight: 500;
@@ -1029,7 +1039,7 @@ footer {
     }
 
     .footer-info .company-contact p,
-    .footer-info .company-contact h4 {
+    .footer-info .company-contact h2 {
         text-align: left;
     }
 
